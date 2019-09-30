@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
     p "====================="
     p "====================="
     @recipe = Recipe.find(params['id']) 
+    p @recipe
     erb :edit
   end 
   
