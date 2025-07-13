@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'activerecord', '4.2.5', :require => 'active_record'
-gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
+gem 'sinatra-activerecord', '>= 2.0.14', :require => 'sinatra/activerecord'
 
-gem 'sinatra'
+gem 'sinatra', '>= 2.0.6'
 gem 'sqlite3', '~>1.3.6'
 gem 'tux'
 gem 'rake'
@@ -15,7 +15,7 @@ gem 'pry'
 group :test do
   gem 'rspec'
   gem 'pry-nav'
-  gem 'capybara'
-  gem 'rack-test'
+  gem 'capybara', '>= 3.15.0'
+  gem 'rack-test', '>= 2.0.0'
   gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end
